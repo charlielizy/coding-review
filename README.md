@@ -1,4 +1,4 @@
-# coding deployment
+# Coding Information
 
 This project was deployed to public url [http://charlielizy.github.io/coding-review](http://charlielizy.github.io/coding-review)
 
