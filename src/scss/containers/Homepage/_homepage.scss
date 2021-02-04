@@ -1,0 +1,38 @@
+.homepage-wrapper {
+  width: 100%;
+  padding: 2% 2%;
+  background-color: $background-01;
+  @media screen and (min-width: 768px) {
+    padding: 2% 15%;
+  }
+
+  .homepage-title {
+    font-family: $font-01;
+    font-size: 1.5rem;
+    color: $text-04;
+    font-weight: 600;
+  }
+
+  .homepage-info {
+    font-family: $font-01;
+    color: $text-02;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .button-homepage {
+    display: block;
+    margin: 30px auto;
+    border: 2px solid $ui-06;
+    color: $ui-06;
+    background-color: transparent;
+    font-family: $font-02;
+    font-weight: 600;
+  }
+}

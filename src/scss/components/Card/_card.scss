@@ -1,0 +1,63 @@
+@mixin text {
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+}
+.card {
+  position: relative;
+  width: 345px;
+  height: 360px;
+  margin: 20px 0;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0;
+  box-shadow: $shadow-01;
+  opacity: 1;
+  transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -webkit-transition: opacity 2s ease-in;
+
+  &:hover {
+    box-shadow: $shadow-02;
+    cursor: pointer;
+  }
+
+  
+  .card-date {
+    font-family: $font-01;
+    color: $text-05;
+  }
+  .card-title {
+    font-family: $font-01;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $text-05;
+    @include text;
+    max-height: 4rem;
+    line-height: 2rem;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+  }
+  .card-content {
+    font-family: $font-01;
+    color: $text-05;
+    @include text;
+    max-height: 7.5rem;
+    line-height: 1.5rem;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+  }
+
+  @mixin button-transprent {
+    border: 1px solid $text-05;
+    color: $text-05;
+    background-color: transparent;
+    font-family: $font-02;
+  }
+  .button-card {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    @include button-transprent;
+  }
+}
